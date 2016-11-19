@@ -9,6 +9,6 @@ for path in share_paths:
     for file_name in lib_files:
         src = os.path.join(local_path, file_name)
         dst = os.path.join(path, file_name)
-        print "Copying from " + src + "\n"
-        "to " + dst
+        print "Copying from " + src
+        print "to " + dst
         shutil.copyfile(src, dst)
